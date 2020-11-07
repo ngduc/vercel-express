@@ -13,6 +13,7 @@ $ vercel
 - Vercel will generate ".vercel" directory, don't share or commit this one.
 - After deploying, open your URL like this: (notice `/api` at the end)
   - http://YOUR-VERCEL-APP-ID.vercel.app/api
+  - Example: https://vercel-express-3.vercel.app/api
 
 ### app/index.js
 
