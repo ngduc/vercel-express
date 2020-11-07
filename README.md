@@ -2,7 +2,7 @@
 
 Vercel Express and UI Webapp Example.
 
-Live Demo - https://vercel-express-3.vercel.app
+Live Demo - https://vercel-express-3.ngduc.vercel.app
 
 ### Set up & Deploy with Vercel
 
@@ -15,7 +15,7 @@ $ vercel
 - Vercel will generate ".vercel" directory, don't share or commit this one.
 - After deploying, open your URL like this:
   - http://YOUR-VERCEL-APP-ID.vercel.app
-  - Example: https://vercel-express-3.vercel.app
+  - Example: https://vercel-express-3.ngduc.vercel.app
 
 ### [app/index.js](./app/index.js)
 
