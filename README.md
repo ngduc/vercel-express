@@ -18,3 +18,7 @@ $ vercel
 
 - If you're using Typescript, build your source directory, output to "app"
 - Update package.json: "main": "app/index.js"
+
+### Links
+- https://vercel.com/guides/using-express-with-vercel
+- https://dev.to/ngduc/create-and-deploy-an-express-nodejs-app-using-vercel-free-1gnn
