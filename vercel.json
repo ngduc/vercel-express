@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "env": {
+  },
   "builds": [
     {
       "src": "app/index.js",
@@ -18,6 +20,10 @@
     {
       "src": "/",
       "dest": "ui/index.html"
+    },
+    {
+      "src": "/(.+)",
+      "dest": "ui/$1"
     }
   ]
 }
