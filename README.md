@@ -12,7 +12,7 @@ $ npm install
 $ vercel
 ```
 
-- Vercel will generate ".vercel" directory, don't share or commit this one.
+- Vercel will generate a ".vercel" directory, don't share or commit this one.
 - After deploying, open your URL like this:
   - http://YOUR-VERCEL-APP-ID.vercel.app
   - Example: https://vercel-express-3.ngduc.vercel.app
@@ -25,7 +25,11 @@ $ vercel
 ### [vercel.json](./vercel.json)
 
 - Map API routes (/api/...) and static (UI) routes (/...).
+- Environment variables - examples:
+  - ```$ vercel secrets add my-mongodb-uri mongodb+srv://<user>:<password>@clusteridxxx.mongodb.net/<database-name>?retryWrites=true```
+  - add "env" to vercel.json ```{ "env": { "MONGODB_URI": "@my-mongodb-uri" }, ... }```
+
 
 ### Links
 - https://vercel.com/guides/using-express-with-vercel
-- https://dev.to/ngduc/create-and-deploy-an-express-nodejs-app-using-vercel-free-1gnn
+- https://medium.com/javascript-in-plain-english/create-and-deploy-a-node-js-express-app-for-free-f75d8796ba70
