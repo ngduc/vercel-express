@@ -23,6 +23,7 @@ $ vercel
 
 - If you're using Typescript, build your source directory, then output to "app" (Backend) and "ui" (Frontend).
 - Update package.json: "main": "app/index.js"
+- See [app/README.md](./app/README.md)
 
 ### [vercel.json](./vercel.json)
 
@@ -30,6 +31,7 @@ $ vercel
 - Environment variables - examples:
   - ```$ vercel secrets add my-mongodb-uri mongodb+srv://<user>:<password>@clusteridxxx.mongodb.net/<database-name>?retryWrites=true```
   - add "env" to vercel.json ```{ "env": { "MONGODB_URI": "@my-mongodb-uri" }, ... }```
+- See [ui/README.md](./ui/README.md)
 
 ### Links
 - https://vercel.com/guides/using-express-with-vercel
