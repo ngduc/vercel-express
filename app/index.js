@@ -1,4 +1,9 @@
 const app = require('express')();
+const helmet = require('helmet');
+const compression = require('compression');
+
+app.use(helmet());
+app.use(compression());
 
 app.get('/api', (req, res) => {
   const randomId = `${Math.random()}`.slice(2);
@@ -10,7 +15,10 @@ app.get('/api', (req, res) => {
 
 app.get('/api/item/:itemId', (req, res) => {
   const { itemId } = req.params;
-  res.end(`Item: ${itemId}`);
+  res.json({ itemId });
 });
+
+const port = process.env.PORT || 3030;
+app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
 
 module.exports = app;
