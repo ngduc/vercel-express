@@ -13,5 +13,6 @@ Vercel-Express TODO List
 
 ### Done ✓
 
+- [x] Use express with typescript. 2021-02-23
 - [x] Added instructions to create app & ui projects. 2021-02-23
 - [x] Upgrade dependencies. 2021-02-22

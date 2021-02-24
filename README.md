@@ -18,10 +18,11 @@ $ vercel
 - After deploying, open your URL like this:
   - http://YOUR-VERCEL-APP-ID.vercel.app
   - Example: https://vercel-express-ngduc.vercel.app
+- Build your source directory, then output to "app/build" (Backend) and "ui/buid" (Frontend).
+  - Some boilerplate generator output the built files to "dist" instead of "build", so update your vercel.json accordingly.
 
 ### [app/index.js](./app/index.js)
 
-- If you're using Typescript, build your source directory, then output to "app" (Backend) and "ui" (Frontend).
 - Update package.json: "main": "app/index.js"
 - See [app/README.md](./app/README.md)
 
@@ -34,5 +35,6 @@ $ vercel
 - See [ui/README.md](./ui/README.md)
 
 ### Links
-- https://vercel.com/guides/using-express-with-vercel
-- https://medium.com/javascript-in-plain-english/create-and-deploy-a-node-js-express-app-for-free-f75d8796ba70
+- Article https://vercel.com/guides/using-express-with-vercel
+- Article https://medium.com/javascript-in-plain-english/create-and-deploy-a-node-js-express-app-for-free-f75d8796ba70
+- Node Express Mongoose boilerplate 

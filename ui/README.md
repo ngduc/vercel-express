@@ -2,6 +2,7 @@
 
 Web UI.
 - Make sure after building the UI (npm run build), output files are built to the "build" directory.
+- After building the project, you may want to add the "build" directory to .gitignore file.
 
 ### Using CRA (create-react-app)
 

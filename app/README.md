@@ -2,13 +2,44 @@
 
 Backend code.
 - Make sure after building the Backend (npm run build), output files are built to the "build" directory.
+- After building the project, you may want to add the "build" directory to .gitignore file.
 
-### Using express-generator-typescript
+### Using express with typescript
 
+Build the backend "app" and output files to "app/build":
 ```
 cd <project-dir>
-rm -rf app
-npx express-generator-typescript "app"
 cd app
 npm install
+npm run build
+```
+
+### Using Javascript only:
+
+Create this file "app/build/index.js"
+```
+const app = require('express')();
+const helmet = require('helmet');
+const compression = require('compression');
+
+app.use(helmet());
+app.use(compression());
+
+app.get('/api', (req, res) => {
+  const randomId = `${Math.random()}`.slice(2);
+  const path = `/api/item/${randomId}`;
+  res.setHeader('Content-Type', 'text/html');
+  res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
+  res.end(`Hello! Go to item: <a href="${path}">${path}</a>`);
+});
+
+app.get('/api/item/:itemId', (req, res) => {
+  const { itemId } = req.params;
+  res.json({ itemId });
+});
+
+const port = process.env.PORT || 3030;
+app.listen(port, () => console.log(`Server running on ${port}, http://localhost:${port}`));
+
+module.exports = app;
 ```
