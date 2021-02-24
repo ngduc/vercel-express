@@ -21,10 +21,13 @@ $ vercel
 - Build your source directory, then output to "app/build" (Backend) and "ui/buid" (Frontend).
   - Some boilerplate generator output the built files to "dist" instead of "build", so update your vercel.json accordingly.
 
-### [app/index.js](./app/index.js)
+### Code
 
-- Update package.json: "main": "app/index.js"
+Backend
 - See [app/README.md](./app/README.md)
+
+Frontend
+- See [ui/README.md](./ui/README.md)
 
 ### [vercel.json](./vercel.json)
 
@@ -32,9 +35,8 @@ $ vercel
 - Environment variables - examples:
   - ```$ vercel secrets add my-mongodb-uri mongodb+srv://<user>:<password>@clusteridxxx.mongodb.net/<database-name>?retryWrites=true```
   - add "env" to vercel.json ```{ "env": { "MONGODB_URI": "@my-mongodb-uri" }, ... }```
-- See [ui/README.md](./ui/README.md)
 
 ### Links
 - Article https://vercel.com/guides/using-express-with-vercel
 - Article https://medium.com/javascript-in-plain-english/create-and-deploy-a-node-js-express-app-for-free-f75d8796ba70
-- Node Express Mongoose boilerplate 
+- Node Express Mongoose boilerplate https://github.com/ngduc/node-rem
