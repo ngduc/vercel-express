@@ -13,7 +13,7 @@ app.get('/api', (req: Request, res: Response) => {
   res.end(`Hello! Fetch one item: <a href="${path}">${path}</a>`);
 });
 
-app.get('/api/item/:itemId', (req, res) => {
+app.get('/api/item/:itemId', (req: Request, res: Response) => {
   const { itemId } = req.params;
   res.json({ itemId });
 });
