@@ -6,17 +6,17 @@ Backend code.
 
 ### Using express with typescript
 
-Build the backend "app" and output files to "app/build":
+Build the "backend" project and output files to "backend/build":
 ```
 cd <project-dir>
-cd app
+cd backend
 npm install
 npm run build
 ```
 
 ### Using Javascript only:
 
-Create this file "app/build/index.js"
+Create this file "backend/build/index.js"
 ```
 const app = require('express')();
 const helmet = require('helmet');

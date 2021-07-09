@@ -1,0 +1,12 @@
+{
+  "name": "ui",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "rimraf build && cp -R src build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}

@@ -1,14 +1,16 @@
 import express from 'express';
+import { Request, Response } from 'express';
+// import cors from "cors"; // for CORS setup, usage: app.use(cors());
 
 const app = express();
 const port = process.env.PORT || 3030; // default port to listen
 
-app.get('/api', (req, res) => {
+app.get('/api', (req: Request, res: Response) => {
   const randomId = `${Math.random()}`.slice(2);
   const path = `/api/item/${randomId}`;
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
-  res.end(`Hello! Go to item: <a href="${path}">${path}</a>`);
+  res.end(`Hello! Fetch one item: <a href="${path}">${path}</a>`);
 });
 
 app.get('/api/item/:itemId', (req, res) => {
@@ -16,10 +18,9 @@ app.get('/api/item/:itemId', (req, res) => {
   res.json({ itemId });
 });
 
-// start the express server
 app.listen(port, () => {
   // tslint:disable-next-line:no-console
-  console.log(`server started at http://localhost:${port}`);
+  console.log(`Server started at http://localhost:${port}`);
 });
 
 module.exports = app;
