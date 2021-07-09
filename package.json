@@ -1,20 +1,15 @@
 {
   "name": "vercel-express",
   "version": "1.2.0",
-  "description": "",
+  "description": "Vercel Express and UI fullstack webapp example.",
   "author": "Duc Nguyen",
   "homepage": "https://github.com/ngduc/vercel-express",
   "main": "app/build/index.js",
   "scripts": {
-    "dev": "vercel dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "MIT",
-  "dependencies": {
-    "compression": "^1.7.4",
-    "express": "^4.17.1",
-    "helmet": "^4.4.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "husky": "^5.1.1"
   },

@@ -1,6 +1,6 @@
 # Vercel-Express
 
-Vercel Express and UI Webapp Example.
+Vercel Express and UI fullstack webapp example.
 
 Live Demo - https://vercel-express-ngduc.vercel.app
 
