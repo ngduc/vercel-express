@@ -9,8 +9,10 @@ Live Demo - https://vercel-express-ngduc.vercel.app
 Star and clone this repo, update package.json with your information (project name, your name, etc.), verify vercel.json.
 
 ```
-$ npm install vercel -g
 $ npm install
+$ cd ./backend && npm install
+$ cd ..
+$ npm install vercel -g
 $ vercel
 ```
 
