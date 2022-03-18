@@ -38,6 +38,6 @@ Frontend
 
 ### Links
 
-- Article https://vercel.com/guides/using-express-with-vercel
 - Article https://medium.com/javascript-in-plain-english/create-and-deploy-a-node-js-express-app-for-free-f75d8796ba70
+- Article https://vercel.com/guides/using-express-with-vercel
 - Node Express Mongoose boilerplate https://github.com/ngduc/node-rem
