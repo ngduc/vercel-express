@@ -10,7 +10,7 @@ Star and clone this repo, update package.json with your information (project nam
 
 ```
 $ npm install
-$ cd ./backend && npm install
+$ cd ./backend && npm install && npm run build
 $ cd ..
 $ npm install vercel -g
 $ vercel
