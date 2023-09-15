@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "husky": "^7.0.4"
+    "husky": "^8.0.3"
   },
   "prettier": {
     "tabWidth": 2,
