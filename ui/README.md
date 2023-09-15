@@ -4,22 +4,14 @@ Web UI.
 - Make sure after building the UI (npm run build), output files are built to the "build" directory.
 - After building the project, you may want to add the "build" directory to .gitignore file.
 
-### Using CRA (create-react-app)
+### Using create-blank-app (cba)
 
 ```
 cd <project-dir>
 rm -rf ui
-npx create-react-app my-app --template ui
+npx create-blank-app ui
 cd ui
 npm install
 ```
 
-### Using CSA (create-snowpack-app)
-
-```
-cd <project-dir>
-rm -rf ui
-npx create-snowpack-app --template @snowpack/app-template-react-typescript ui
-cd ui
-npm install
-```
+See more: [create-blank-app](https://github.com/ngduc/create-blank-app)
