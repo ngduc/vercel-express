@@ -2,6 +2,9 @@ import express from 'express';
 import { Request, Response } from 'express';
 // import cors from "cors"; // for CORS setup, usage: app.use(cors());
 
+import dotenv from 'dotenv';
+dotenv.config(); // load variables from .env file
+
 const app = express();
 const port = process.env.PORT || 3030; // default port to listen
 
