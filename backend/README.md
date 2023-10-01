@@ -11,6 +11,8 @@ Build the "backend" project and output files to "backend/build":
 cd <project-dir>
 cd backend
 npm install
+npm start
+
 npm run build
 ```
 
