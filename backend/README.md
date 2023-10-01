@@ -9,11 +9,11 @@ Backend code.
 Build the "backend" project and output files to "backend/build":
 ```
 cd <project-dir>
-cd backend
+cd ./backend
 npm install
-npm start
 
-npm run build
+npm start       (Dev mode: try: http://localhost:3030/api)
+npm run build   (Build for Prod)
 ```
 
 ### Using Javascript only:
