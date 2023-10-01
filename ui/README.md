@@ -10,6 +10,7 @@ Web UI.
 cd <project-dir>
 rm -rf ui
 npx create-blank-app ui
+
 cd ui
 npm install
 ```
