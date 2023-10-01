@@ -1,5 +1,6 @@
 import express from 'express';
 import { Request, Response } from 'express';
+import { StatusCodes, getReasonPhrase } from 'http-status-codes';
 import helmet from 'helmet';
 // import cors from "cors"; // for CORS setup, usage: app.use(cors());
 
@@ -20,6 +21,9 @@ app.get('/api', (req: Request, res: Response) => {
 
 app.get('/api/item/:itemId', (req: Request, res: Response) => {
   const { itemId } = req.params;
+  if (itemId.length <= 1) {
+    res.status(StatusCodes.BAD_REQUEST).send(getReasonPhrase(StatusCodes.BAD_REQUEST));
+  }
   res.json({ itemId });
 });
 
