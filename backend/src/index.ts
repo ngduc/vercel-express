@@ -11,6 +11,7 @@ const port = process.env.PORT || 3030; // default port to listen
 
 const app = express();
 app.use(express.json()); // parse json payload
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(helmet());
 
 app.get('/api', (req: Request, res: Response) => {
