@@ -4,6 +4,10 @@ Vercel Express and UI fullstack webapp example.
 
 Live Demo - https://vercel-express-ngduc.vercel.app
 
+### README
+
+See [backend/README.md](./backend/README.md)
+
 ### Set up & Deploy with Vercel
 
 Star and clone this repo, update package.json with your information (project name, your name, etc.), verify vercel.json.

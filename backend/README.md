@@ -18,7 +18,7 @@ npm run build   (Build for Prod)
 
 ### Using Javascript only:
 
-Create this file "backend/build/index.js"
+To use this with Javascript only (without Typescript), create this file "backend/build/index.js"
 ```
 const app = require('express')();
 const helmet = require('helmet');
