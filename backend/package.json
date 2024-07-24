@@ -8,16 +8,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@types/express": "^4.17.18",
-    "@types/node": "^20.8.0",
-    "rimraf": "^5.0.5",
-    "typescript": "^5.2.2"
+    "@types/compression": "^1.7.5",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.12",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "compression": "^1.7.4",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "helmet": "^7.0.0",
-    "http-status-codes": "^2.3.0"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "http-status-codes": "^2.3.0",
+    "zod": "^3.23.8"
   }
 }
