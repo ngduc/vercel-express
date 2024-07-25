@@ -1,6 +1,8 @@
-const { server } = require('./src/index');
+const app = require('./src/index');
 
 afterAll((done) => {
-  server.close();
+  if (app.settings.server) {
+    app.settings.server.close();
+  }
   done();
 });

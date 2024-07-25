@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../src/';
+const app = require('../src/index');
 
 it('should return an item by id', async () => {
   const rs = await request(app).get('/api/items/123').send();

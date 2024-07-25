@@ -11,7 +11,7 @@ dotenv.config(); // load variables from .env file
 
 const port = process.env.PORT || 3030; // default port to listen
 
-export const app = express();
+const app = express();
 app.use(express.json()); // parse json payload
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(helmet());
@@ -35,7 +35,10 @@ app.get('/api/items/:id', (req: Request, res: Response) => {
   res.json({ id });
 });
 
-export const server = app.listen(port, () => {
+// store this in 'app.settings.server' so jest.setup.js can close it properly:
+app.settings.server = app.listen(port, () => {
   // tslint:disable-next-line:no-console
   console.log(`Server started at http://localhost:${port} - try: http://localhost:3030/api`);
 });
+
+module.exports = app;
