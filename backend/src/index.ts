@@ -11,7 +11,7 @@ dotenv.config(); // load variables from .env file
 
 const port = process.env.PORT || 3030; // default port to listen
 
-const app = express();
+export const app = express();
 app.use(express.json()); // parse json payload
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(helmet());
@@ -19,13 +19,13 @@ app.use(compression());
 
 app.get('/api', (req: Request, res: Response) => {
   const randomId = `${Math.random()}`.slice(2);
-  const path = `/api/item/${randomId}`;
+  const path = `/api/items/${randomId}`;
   res.setHeader('Content-Type', 'text/html');
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate');
   res.end(`Hello! Fetch one item: <a href="${path}">${path}</a>`);
 });
 
-app.get('/api/item/:id', (req: Request, res: Response) => {
+app.get('/api/items/:id', (req: Request, res: Response) => {
   const { id } = req.params;
   const parsedResult = ItemValidation.safeParse({ id }); // validate inputs
 
@@ -35,9 +35,7 @@ app.get('/api/item/:id', (req: Request, res: Response) => {
   res.json({ id });
 });
 
-app.listen(port, () => {
+export const server = app.listen(port, () => {
   // tslint:disable-next-line:no-console
   console.log(`Server started at http://localhost:${port} - try: http://localhost:3030/api`);
 });
-
-module.exports = app;
